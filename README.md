@@ -25,8 +25,11 @@
 
 ## Hardware
 * Arduni Pro Mini (compatibile) 5V 16MHz
+* DHT22 Temperature - Humidity sensor
 
 ## Library
+* Adafruit DHT22
+* Adafruit Unified Sensors
 
 ## ToDo
 - [ ] Add temperature sensor
@@ -40,6 +43,7 @@
 ## Links
 * http://tinkersphere.com/boards/722-pro-mini-5v-16mhz-arduino-compatible-atmega328p-breakout.html
 * http://openweathermap.org/api
+* https://learn.adafruit.com/dht/
 
 ### other
 curl -d 'temp=20&lat=49.11&long=24.11&alt=200' --user 'username:****' http://openweathermap.org/data/post
