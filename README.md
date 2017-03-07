@@ -28,6 +28,8 @@
 * DHT22 Temperature - Humidity sensor
 * DS18B20 Temperature sensor
 * BMP180 Pressure sensor
+* ESP8266-01 wi-fi board
+
 
 ## Library
 * Adafruit DHT22
@@ -51,6 +53,7 @@
 * https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806
 * https://www.sparkfun.com/products/12009
 * https://learn.adafruit.com/bmp085/overview
+* http://www.instructables.com/id/ESP8266-mini-Tutorial/?ALLSTEPS
 
 ### other
 curl -d 'temp=20&lat=49.11&long=24.11&alt=200' --user 'username:****' http://openweathermap.org/data/post

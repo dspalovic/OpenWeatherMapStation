@@ -1,0 +1,49 @@
+ESP8266-01
+
+|----------------------------|
+|                            |
+|  board                     |
+|                            |
+|                            |
+| Gnd | GPIO02 | GPIO00 | RX |
+| TX  | CH_PD  |   RST  | Vcc|
+|----------------------------|
+
+Vcc - 3.3V (max 3.6V)
+Gnd - gnd
+RX - Receive data (3.3V !!!)
+TX - Transmit data (3.3V)
+CH_PD - Chip Power down (LOW - Power down active) (to 3.3V - operate)
+RST - Reset (LOW - Reset active)
+GPIO00 - General Purpose I/O 00
+GPIO02 - General Purpose I/O 02
+
+
+ESP8266-01 |           | USB2Serial
+-----------------------------------
+Vcc        |   3.3V    |
+Gnd        |   gnd     |   GND
+TX         |           |   RX
+RX         |    vd*    |   TX
+CH_PD      |    gnd    |
+-----------------------------------
+
+
+* vd - voltage devider
+        TX (USB2Serial)
+         |
+        ---
+        | |
+        | |  1K
+        ---
+         |
+         |_______  RX (ESP8266)
+         |
+         |
+        ---
+        | |
+        | |  2K
+        ---
+         |
+        GND
+        
